@@ -17,30 +17,23 @@ This script performs **semantic segmentation** on the input image and visualizes
 - **Segmentation Output:**
   - Generates a mask where each pixel is assigned a class ID.
   - Applies a color palette to visualize the segmentation classes.
-- **Output:**
-  - Saves a segmentation image (`both-resultant-image.png`) where all classes are color-coded.
+- **Output:** Saves a segmentation image (`both-resultant-image.png`) where all classes are color-coded.
 
 **2. `pedestrian.py`**
 This script focuses on **extracting only pedestrians** (COCO class ID 15, corresponding to "person") from the input image.
 
 **Key Features:**
-- **Mask Extraction:**
-  - Extracts the mask where class ID = 15 (pedestrian).
-- **Output Image:**
-  - Creates a binary mask, highlighting pedestrian areas in red (`[255, 0, 0]` in RGB).
-- **Output:**
-  - Saves the segmented pedestrian image (`pedestrian-resultant-image.png`).
+- **Mask Extraction:** Extracts the mask where class ID = 15 (pedestrian).
+- **Output Image:** Creates a binary mask, highlighting pedestrian areas in red (`[255, 0, 0]` in RGB).
+- **Output:** Saves the segmented pedestrian image (`pedestrian-resultant-image.png`).
 
 **3. `vehicle.py`**
 This script segments **vehicles** (COCO class IDs 2 and 7, corresponding to "car" and "truck").
 
 **Key Features:**
-- **Vehicle Mask Creation:**
-  - Combines masks for "car" (class ID 2) and "truck" (class ID 7).
-- **Output Image:**
-  - Creates a binary mask with detected vehicles highlighted in blue (`[0, 0, 255]` in RGB).
-- **Output:**
-  - Saves the segmented vehicle image (`vehicle-resultant-image.png`).
+- **Vehicle Mask Creation:** Combines masks for "car" (class ID 2) and "truck" (class ID 7).
+- **Output Image:** Creates a binary mask with detected vehicles highlighted in blue (`[0, 0, 255]` in RGB).
+- **Output:** Saves the segmented vehicle image (`vehicle-resultant-image.png`).
 
 ### **Common Components Across Scripts:**
 1. **Model Loading:**
