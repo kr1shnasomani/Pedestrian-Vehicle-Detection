@@ -6,9 +6,7 @@ The system leverages DeepLabv3 ResNet-50 to detect and segment pedestrians and v
 ## Overview:
 The given code snippets implement image segmentation for detecting pedestrians and vehicles in an image using a **DeepLabv3 model** with a ResNet-50 backbone, pretrained on the COCO dataset. The scripts are divided into three distinct files based on their functionality:
 
----
-
-### **1. `both.py`**
+**1. `both.py`**
 This script performs **semantic segmentation** on the input image and visualizes all detected classes using a color-coded segmentation mask.
 
 **Key Features:**
@@ -22,9 +20,7 @@ This script performs **semantic segmentation** on the input image and visualizes
 - **Output:**
   - Saves a segmentation image (`both-resultant-image.png`) where all classes are color-coded.
 
----
-
-### **2. `pedestrian.py`**
+**2. `pedestrian.py`**
 This script focuses on **extracting only pedestrians** (COCO class ID 15, corresponding to "person") from the input image.
 
 **Key Features:**
@@ -35,9 +31,7 @@ This script focuses on **extracting only pedestrians** (COCO class ID 15, corres
 - **Output:**
   - Saves the segmented pedestrian image (`pedestrian-resultant-image.png`).
 
----
-
-### **3. `vehicle.py`**
+**3. `vehicle.py`**
 This script segments **vehicles** (COCO class IDs 2 and 7, corresponding to "car" and "truck").
 
 **Key Features:**
@@ -47,8 +41,6 @@ This script segments **vehicles** (COCO class IDs 2 and 7, corresponding to "car
   - Creates a binary mask with detected vehicles highlighted in blue (`[0, 0, 255]` in RGB).
 - **Output:**
   - Saves the segmented vehicle image (`vehicle-resultant-image.png`).
-
----
 
 ### **Common Components Across Scripts:**
 1. **Model Loading:**
@@ -60,10 +52,7 @@ This script segments **vehicles** (COCO class IDs 2 and 7, corresponding to "car
 3. **Inference:**
    - Performs a forward pass with the model and extracts segmentation outputs (`output['out'][0]`).
    - Uses the `argmax` function to determine the class ID for each pixel.
-4. **Output Path:**
-   - The segmented images are saved in a specified output directory.
-
----
+4. **Output Path:** The segmented images are saved in a specified output directory.
 
 ### **Use Cases and Functionality:**
 - **`both.py`**: For general-purpose segmentation and visualization of all classes in an image.
