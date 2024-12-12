@@ -2,6 +2,12 @@
 The system leverages DeepLabv3 ResNet-50 to detect and segment pedestrians and vehicles, with color-coded masks for easy visualization. This solution is designed for applications in traffic monitoring, pedestrian safety and smart city solutions. Built using PyTorch, Semantic Segmentation and Computer Vision techniques.
 
 ## Execution Guide:
+1. Run the following command line in the terminal:
+   ```
+   pip install torch torchvision pillow numpy
+   ```
+
+2. 
 
 ## Overview:
 The given code snippets implement image segmentation for detecting pedestrians and vehicles in an image using a **DeepLabv3 model** with a ResNet-50 backbone, pretrained on the COCO dataset. The scripts are divided into three distinct files based on their functionality:
