@@ -7,7 +7,15 @@ The system leverages DeepLabv3 ResNet-50 to detect and segment pedestrians and v
    pip install torch torchvision pillow numpy
    ```
 
-2. 
+2. Before running the code enter the path of the image whose segemented image you want see
+
+3. Also enter the path of the location where you want to save the resultant file ()
+
+4. The following images show how the output will look like:
+
+   Input Image:
+
+   
 
 ## Overview:
 The given code snippets implement image segmentation for detecting pedestrians and vehicles in an image using a **DeepLabv3 model** with a ResNet-50 backbone, pretrained on the COCO dataset. The scripts are divided into three distinct files based on their functionality:
