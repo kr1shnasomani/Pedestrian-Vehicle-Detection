@@ -15,6 +15,16 @@ The system leverages DeepLabv3 ResNet-50 to detect and segment pedestrians and v
 
    Input Image:
 
+   ![image](https://github.com/user-attachments/assets/3dd7a070-af2a-4be8-b3f8-e086786f7e12)
+
+   Output Image:
+
+   a. `both-resultant-image.png`
+
+   b. `vehicle-resultant-image.png`
+
+   c. `pedestrian-resultant-image.png`
+
    
 
 ## Overview:
