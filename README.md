@@ -6,7 +6,7 @@ The system leverages DeepLabv3 ResNet-50 to detect and segment pedestrians and v
 ## Overview:
 The given code snippets implement image segmentation for detecting pedestrians and vehicles in an image using a **DeepLabv3 model** with a ResNet-50 backbone, pretrained on the COCO dataset. The scripts are divided into three distinct files based on their functionality:
 
-**1. `both.py`**
+### **1. `both.py`**
 This script performs **semantic segmentation** on the input image and visualizes all detected classes using a color-coded segmentation mask.
 
 **Key Features:**
@@ -19,7 +19,7 @@ This script performs **semantic segmentation** on the input image and visualizes
   - Applies a color palette to visualize the segmentation classes.
 - **Output:** Saves a segmentation image (`both-resultant-image.png`) where all classes are color-coded.
 
-**2. `pedestrian.py`**
+### **2. `pedestrian.py`**
 This script focuses on **extracting only pedestrians** (COCO class ID 15, corresponding to "person") from the input image.
 
 **Key Features:**
@@ -27,7 +27,7 @@ This script focuses on **extracting only pedestrians** (COCO class ID 15, corres
 - **Output Image:** Creates a binary mask, highlighting pedestrian areas in red (`[255, 0, 0]` in RGB).
 - **Output:** Saves the segmented pedestrian image (`pedestrian-resultant-image.png`).
 
-**3. `vehicle.py`**
+### **3. `vehicle.py`**
 This script segments **vehicles** (COCO class IDs 2 and 7, corresponding to "car" and "truck").
 
 **Key Features:**
