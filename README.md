@@ -11,7 +11,7 @@ The system leverages DeepLabv3 ResNet-50 to detect and segment pedestrians and v
 
 3. Also enter the path of the location where you want to save the resultant file (`both-resultant-image.png`, `pedestrian-resultant-image.png` and `vehicle-resultant-image.png`)
 
-4. The following images show how the output will look like:
+## Model Prediction:
 
    Input Image:
 
